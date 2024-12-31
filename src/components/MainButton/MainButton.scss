@@ -1,0 +1,23 @@
+.main-button, .main-button-pressed {
+    padding: .5rem .75rem;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.main-button {
+    background-color: white;
+    color: black;
+    transition-property: color background-color;
+    transition-duration: .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+
+.main-button-pressed {
+    background-color: black;
+    color: white;
+}
