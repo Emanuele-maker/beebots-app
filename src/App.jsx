@@ -12,11 +12,11 @@ const App = () => {
   const uploadMatchPoints = () => {
     fetch("https://script.google.com/macros/s/AKfycbzT74DLeD31qBjrp4edlqMHkR7X2y4nXAHs2Bozeg6yvHNMsn56PaGQkE7Sw7CbwlmVhw/exec", {
       method: "POST",
-      body: {
+      body: JSON.stringify({
         matchPointsArr,
         matchPoints,
         matchTime
-      },
+      }),
       mode: "no-cors"
     })
     .then(res => res.json())
