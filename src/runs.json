@@ -179,15 +179,15 @@
                 "choices": [
                     {
                         "choice": 3,
-                        "points": 30
+                        "points": 15
                     },
                     {
                         "choice": 2,
-                        "points": 20
+                        "points": 10
                     },
                     {
                         "choice": 1,
-                        "points": 10
+                        "points": 5
                     },
                     {
                         "choice": 0,
