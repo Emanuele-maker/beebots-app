@@ -16,7 +16,8 @@ const App = () => {
         matchPointsArr,
         matchPoints,
         matchTime
-      }
+      },
+      mode: "no-cors"
     })
     .then(res => res.json())
     .then(data => {
