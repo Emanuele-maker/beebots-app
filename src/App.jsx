@@ -10,14 +10,14 @@ const App = () => {
   const [matchTime, setMatchTime] = useState(0)
 
   const uploadMatchPoints = () => {
-    fetch("https://script.google.com/macros/s/AKfycby5ESa1XsZTvhBtkAEpXAtWZjKG36gZdVACL2dCp1TNpPWfCZbjgtCMqCKKKwjy65TuUQ/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyUnPdWWTh9umUDCjgqNbXnQLozAok_23FlVrur4IyM9xqmOZVvBjgDCUXH4zjOSzjBwQ/exec", {
       method: "POST",
-      body: JSON.stringify([...matchPointsArr.map(run => run.points), matchPoints, matchTime].join("&")),
-      mode: "no-cors"
+      body: [...matchPointsArr.map(run => run.points), matchPoints, matchTime].join("&")
     })
     .then(res => res.text())
     .then(data => {
       console.log(data)
+      alert(data)
     })
     .catch(err => {
       console.log(err)
